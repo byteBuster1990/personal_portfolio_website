@@ -1,6 +1,9 @@
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
+
+
 
 /* Navigation Bar */
 
@@ -86,7 +89,10 @@ h2 {
 
 .container {
   display: flex;
-  margin-top: 40px;
+  margin-top: 10px;
+  align-items: bottom;
+  height: 550px;
+  background-color: white;
 }
 
 
@@ -94,19 +100,37 @@ h2 {
 
 .about-me {
   display: flex;
-  align-items: center;
+  align-items: top;
 }
 
 #about-me h1 {
   font-size: 65px;
-  margin-top: 90px;
+  margin-top: 50px;
   color: #7600bc;
 }
 
 #about-me p {
-  font-size: 25px;
-  color: rgb(128, 128, 128);
+  font-size: 20px;
+  color: light white;
   margin-top: -1cm;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic ;
+}
+
+.Career_timeline{
+  height: 300px;
+  width: 1100px;
+  background-color: lightblue;
+  opacity: 0.8;
+  border-style: none;
+}
+
+h4 {
+  text-align: bottom;
+  font-size: 20px;
+  text-align: bottom;  
+  color: black;
+  float: bottom;
 }
 
 .profile_image {
@@ -118,6 +142,8 @@ h2 {
   border-radius: 50%;
   margin: 5px;
 }
+
+.
 
 /* Skills */
 
