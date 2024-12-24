@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vinod Sekar - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="script.js"></script>
+  </head>
+  
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Vinod Raaghav Sekar
+          <div class="contact_info">
+            <img src="email_image.png" height="20px" >
+          vinodsekar2@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="mobile_phone_image.png" height="20px" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +1 437-755-8244
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="index.html">About Me</a>
+          <a class="topmenu" href="index2.html">Skills and Certifications</a>
+          <a class="topmenu" href="#projects">Work Experience</a>
+          <a class="topmenu" href="#blogs">Blogs</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Work Experience
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Cloud Migration</h3>
+            <ul>
+              <li>Migrated data in HDFS system to Azure cloud environment with Databricks and stored data in ADLS, also automated ETL using ADF</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Price optimization</h3>
+            <ul>
+              <li>Optimized price of a after market auto component seller using regression models</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Built a data reporistory</h3>
+            <ul>
+              <li>Built a one stop shop data repository for shipping company to feed data to a web application</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I highly recommend Vinod Sekar. With 7 years of experience in data engineering, he excels in developing efficient, high-quality data solutions, showcasing his technical expertise and commitment to outstanding results
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          It is my pleasure to endorse Vinod Sekar. His 7 years of experience as a data engineer have been marked by innovative problem-solving, superior technical skills, and a dedication to achieving excellence in every project..
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I enthusiastically recommend Vinod Sekar. Over 7 years as a data engineer, he has demonstrated remarkable proficiency in creating robust data systems, consistently delivering high-impact solutions with a focus on quality and precision
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="okay_check.png" />
+      <h3>Thanks for leaving a recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
